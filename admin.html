@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Admin - Scrap Prices</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="box" id="loginBox">
+    <h1>Admin Login</h1>
+    <p>Sirf admin login karke panel open kar sakta hai.</p>
+    <input id="username" type="text" placeholder="Username" autocomplete="username">
+    <input id="password" type="password" placeholder="Password" autocomplete="current-password">
+    <button id="loginBtn">Login</button>
+    <div id="loginMsg"></div>
+  </div>
+
+  <div class="box" id="adminBox" style="display:none">
+    <h1>Scrap Price Admin</h1>
+    <p>Sirf item ka ₹/KG price change karein.</p>
+    <div id="rates"></div>
+    <button id="save">Save Prices</button>
+    <button id="logout" type="button">Logout</button>
+    <div id="msg"></div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
